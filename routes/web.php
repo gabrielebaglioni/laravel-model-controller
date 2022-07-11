@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\MovieController;
+use App\Http\Controllers\MovieControllerActive;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,3 +16,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'MovieController@index' )->name('homepage');
+Route::get('/activeMovie/{id}', 'MovieControllerActive@active')->name('activeMovie');

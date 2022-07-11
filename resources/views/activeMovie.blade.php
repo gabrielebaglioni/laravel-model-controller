@@ -9,11 +9,8 @@
 <body>
    <div>
       <ul>
-         @foreach ($movies as $movie)
-           <li> <a href=" {{ route('activeMovie', $movie->id) }}">{{$movie->title}} </a> </li>
-         @endforeach
-   </div>
+         <li>{{$movie->title}}</li>
       </ul>
-    
+   </div>
 </body>
 </html>
